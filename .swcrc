@@ -1,8 +1,13 @@
 {
   "jsc": {
     "parser": {
-      "syntax": "ecmascript"
+      "syntax": "ecmascript",
+      "dynamicImport": true,
+      "jsx": true
     },
-    "target": "es2017"
+    "target": "es2017",
+    "module": {
+      "type": "commonjs"
+    }
   }
 }

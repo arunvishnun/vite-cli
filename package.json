@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build:server": "swc server -d dist/server",
+    "build:server": "swc server -d lib/server",
     "build:client": "vite build",
     "build": "npm run build:server && npm run build:client",
-    "server": "node server.js"
+    "start": "npm run build:server && build:client && node lib/server/server.js"
   },
   "keywords": [],
   "author": "",
